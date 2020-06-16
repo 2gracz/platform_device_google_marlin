@@ -40,7 +40,7 @@ TARGET_SUPPORTS_GOOGLE_RECORDER := false
 # Device specific properties
 PRODUCT_NAME := aosp_marlin
 PRODUCT_DEVICE := marlin
-PRODUCT_BRAND := Android
+PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel XL
 PRODUCT_MANUFACTURER := Google
 
