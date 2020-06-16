@@ -37,6 +37,13 @@ TARGET_INCLUDE_STOCK_ARCORE := true
 TARGET_INCLUDE_WIFI_EXT := true
 TARGET_SUPPORTS_GOOGLE_RECORDER := false
 
+# Evolution-X Official
+EVO_DONATE_URL := https://www.paypal.me/RioTApex
+EVO_MAINTAINER := Lunarixus
+EVO_SUPPORT_URL := https://t.me/EvolutionXPixel
+CUSTOM_BUILD_TYPE := OFFICIAL
+
+# Device specific properties
 PRODUCT_NAME := aosp_sailfish
 PRODUCT_DEVICE := sailfish
 PRODUCT_BRAND := google
