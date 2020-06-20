@@ -264,6 +264,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libsensorndkbridge
 
+# Power HAL
+PRODUCT_PACKAGES += \
+    android.hardware.power@1.3-service.marlin-libperfmgr
+
 # Tool
 PRODUCT_PACKAGES += \
     libtinyxml
@@ -523,6 +527,9 @@ PRODUCT_PACKAGES += \
     NfcNci \
     Tag \
     android.hardware.nfc@1.1-service \
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/power/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
 
 #Secure Element Service
 PRODUCT_PACKAGES += \
