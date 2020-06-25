@@ -139,7 +139,6 @@ PRODUCT_PROPERTY_OVERRIDES += aaudio.hw_burst_min_usec=2000
 
 PRODUCT_FULL_TREBLE_OVERRIDE := true
 PRODUCT_PACKAGES += \
-    android.hardware.bluetooth.audio@2.0-impl \
     android.hardware.contexthub@1.0-service \
     android.hardware.gnss@1.0-service \
     android.hardware.drm@1.0-service \
@@ -186,22 +185,16 @@ PRODUCT_PACKAGES += \
 
 # Audio
 PRODUCT_PACKAGES += \
-    android.hardware.audio@2.0-impl \
     android.hardware.audio@2.0-service \
-    android.hardware.audio@5.0 \
-    android.hardware.audio@5.0-impl \
-    android.hardware.audio.common@5.0 \
-    android.hardware.audio.common@5.0-util \
-    android.hardware.audio.effect@5.0 \
-    android.hardware.audio.effect@5.0-impl \
-    android.hardware.soundtrigger@2.2-impl \
-    android.hardware.soundtrigger@2.2-service \
+    android.hardware.audio@5.0:32 \
+    android.hardware.audio@5.0-impl:32 \
+    android.hardware.soundtrigger@2.2-impl:32 \
     audio.a2dp.default \
-    audio.primary.msm8996 \
+    audio.primary.msm8996_32 \
     audio.r_submix.default \
     audio.usb.default \
     audio_amplifier.msm8996 \
-    sound_trigger.primary.msm8996 \
+    sound_trigger.primary.msm8996_32 \
     libaacwrapper \
     libaudio-resampler \
     libaudioroute \
