@@ -66,3 +66,8 @@ BOARD_FLASH_BLOCK_SIZE := 131072 # (BOARD_KERNEL_PAGESIZE * 64)
 # BOARD_EXT4_SHARE_DUP_BLOCKS := true
 BOARD_VENDORIMAGE_PARTITION_SIZE := 314572800
 BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
+
+# Manifests
+DEVICE_MANIFEST_FILE := device/google/marlin/configs/manifests/manifest.xml
+DEVICE_MATRIX_FILE   := device/google/marlin/configs/manifests/compatibility_matrix.xml
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := device/google/marlin/configs/manifests/device_framework_matrix.xml
