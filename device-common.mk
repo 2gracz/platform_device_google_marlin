@@ -518,7 +518,7 @@ PRODUCT_PACKAGES += \
 
 # Vibrator
 PRODUCT_PACKAGES += \
-    android.hardware.vibrator@1.0-service.marlin \
+    android.hardware.vibrator@1.0-service \
 
 # Thermal HAL
 PRODUCT_PACKAGES += \
