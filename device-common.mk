@@ -315,7 +315,7 @@ PRODUCT_PACKAGES += \
 endif
 
 PRODUCT_COPY_FILES += \
-    device/google/marlin/sec_config:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config
+    device/google/marlin/configs/gps/sec_config:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config
 
 #FEATURE_OPENGLES_EXTENSION_PACK support string config file
 PRODUCT_COPY_FILES += \
