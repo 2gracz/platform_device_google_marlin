@@ -43,9 +43,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.hwui.path_cache_size=32
 
 PRODUCT_COPY_FILES += \
-    device/google/marlin/fstab.common:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.marlin \
-    device/google/marlin/audio_platform_info_tasha_marlin.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info_tasha.xml \
-    device/google/marlin/init.recovery.common.rc:recovery/root/init.recovery.marlin.rc
+    device/google/marlin/configs/audio/audio_platform_info_tasha_marlin.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info_tasha.xml
 
 # Sensor packages
 PRODUCT_PACKAGES += \
@@ -53,7 +51,7 @@ PRODUCT_PACKAGES += \
     activity_recognition.marlin
 
 PRODUCT_COPY_FILES += \
-    device/google/marlin/nfc/libnfc-nxp.marlin.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf
+    device/google/marlin/configs/nfc/libnfc-nxp.marlin.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf
 
 # Led packages
 PRODUCT_PACKAGES += \
