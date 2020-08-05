@@ -43,6 +43,9 @@ AUDIO_FEATURE_ENABLED_EXTN_RESAMPLER := true
 endif
 AUDIO_FEATURE_ENABLED_SND_MONITOR := true
 
+# Bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/google/marlin/configs/bluetooth
+
 # Disable vbmeta
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --set_hashtree_disabled_flag
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 2
