@@ -49,6 +49,7 @@ BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 2
 
 # Display
 TARGET_USES_AOSP_SURFACEFLINGER := true
+BOARD_EGL_CFG := device/google/marlin/configs/egl/egl.cfg
 
 # Filesystem configs
 TARGET_USERIMAGES_USE_EXT4 := true
