@@ -31,17 +31,6 @@ $(call inherit-product, vendor/google_devices/marlin/marlin-vendor.mk)
 # Device specific properties
 TARGET_BOOT_ANIMATION_RES := 1440
 
-# Gapps
-TARGET_GAPPS_ARCH := arm64
-TARGET_INCLUDE_STOCK_ARCORE := true
-TARGET_SUPPORTS_GOOGLE_RECORDER := false
-
-# Evolution-X Official
-EVO_DONATE_URL := https://www.paypal.me/RioTApex
-EVO_MAINTAINER := Lunarixus
-EVO_SUPPORT_URL := https://t.me/EvolutionXPixel
-CUSTOM_BUILD_TYPE := OFFICIAL
-
 # Device specific properties
 PRODUCT_NAME := aosp_marlin
 PRODUCT_DEVICE := marlin
