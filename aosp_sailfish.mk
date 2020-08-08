@@ -21,9 +21,6 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
-# Inherit Evolution-X configs
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
-
 # Inherit device specific makefiles
 $(call inherit-product, device/google/marlin/device-sailfish.mk)
 $(call inherit-product, vendor/google_devices/sailfish/sailfish-vendor.mk)
@@ -42,7 +39,3 @@ PRODUCT_MANUFACTURER := Google
 # GMS client ID
 PRODUCT_GMS_CLIENTID_BASE := android-google
 
-# Device props
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME=marlin \
-    BUILD_FINGERPRINT=google/taimen/taimen:10/QQ3A.200605.001/6392402:user/release-keys
