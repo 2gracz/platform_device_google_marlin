@@ -21,9 +21,6 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
-# Inherit Evolution-X configs
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
-
 # Inherit device specific makefiles
 $(call inherit-product, device/google/marlin/device-marlin.mk)
 $(call inherit-product, vendor/google_devices/marlin/marlin-vendor.mk)
