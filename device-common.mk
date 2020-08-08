@@ -66,7 +66,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.telephony.default_cdma_sub=0
 
 # Setup Dalvik VM configurations
-$(call inherit-product, vendor/pixeldust/configs/phone-xhdpi-4096-dalvik-heap.mk)
+$(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 
 $(call inherit-product, device/google/marlin/common/common64.mk)
 
@@ -171,6 +171,10 @@ PRODUCT_PACKAGES += \
 # Copy common fstab to vendor
 PRODUCT_COPY_FILES += \
     device/google/marlin/fstab.common:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.$(PRODUCT_HARDWARE)
+
+# Remove packages for making the darn thing fit
+PRODUCT_PACKAGES += \
+    RemovePackages
 
 # RenderScript HAL
 PRODUCT_PACKAGES += \
