@@ -52,7 +52,9 @@ PRODUCT_MANUFACTURER := Google
 # GMS client ID
 PRODUCT_GMS_CLIENTID_BASE := android-google
 
-# Device props
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME=marlin \
-    BUILD_FINGERPRINT=google/taimen/taimen:10/QQ3A.200605.001/6392402:user/release-keys
+    PRODUCT_NAME=sailfish \
+    PRIVATE_BUILD_DESC="sailfish-user 10 QP1A.191005.007.A3 5972272 release-keys"
+
+BUILD_FINGERPRINT :=  google/sailfish/sailfish:10/QP1A.191005.007.A3/5972272:user/release-keys
+
