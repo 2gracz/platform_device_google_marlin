@@ -34,13 +34,7 @@ TARGET_BOOT_ANIMATION_RES := 1080
 # Gapps
 TARGET_GAPPS_ARCH := arm64
 TARGET_INCLUDE_STOCK_ARCORE := true
-TARGET_SUPPORTS_GOOGLE_RECORDER := false
-
-# Evolution-X Official
-EVO_DONATE_URL := https://www.paypal.me/RioTApex
-EVO_MAINTAINER := Lunarixus
-EVO_SUPPORT_URL := https://t.me/EvolutionXPixel
-CUSTOM_BUILD_TYPE := OFFICIAL
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
 
 # Device specific properties
 PRODUCT_NAME := aosp_sailfish
