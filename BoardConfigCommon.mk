@@ -1,3 +1,7 @@
+# Common board config for marlin, sailfish
+
+-include vendor/google/marlin/BoardConfigVendor.mk
+
 # Fix inline kernel building
 BUILD_BROKEN_PHONY_TARGETS := true
 BUILD_BROKEN_DUP_RULES := true
