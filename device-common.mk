@@ -25,6 +25,9 @@ PRODUCT_SHIPPING_API_LEVEL := 25
 # Enforce privapp-permissions whitelist
 PRODUCT_PROPERTY_OVERRIDES += \
 
+# Setting vendor SPL
+VENDOR_SECURITY_PATCH := "2019-10-06"
+
 PRODUCT_SOONG_NAMESPACES += \
     device/google/marlin \
     vendor/google/camera \
@@ -65,7 +68,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.heapgrowthlimit=256m \
     ro.telephony.default_cdma_sub=0
 
-$(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
+$(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 $(call inherit-product, device/google/marlin/common/common64.mk)
 
 #Android EGL implementation
