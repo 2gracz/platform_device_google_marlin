@@ -698,3 +698,6 @@ PRODUCT_PACKAGES_DEBUG += a_sns_test
 # Write flags to the vendor space in /misc partition.
 PRODUCT_PACKAGES += \
     misc_writer
+    
+$(call inherit-product-if-exists, vendor/gapps/gapps.mk)
+
