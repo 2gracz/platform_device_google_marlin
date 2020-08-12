@@ -15,6 +15,12 @@ TARGET_KERNEL_CONFIG := LunarKernel_defconfig
 TARGET_KERNEL_ARCH := arm64
 BOARD_KERNEL_IMAGE_NAME := Image.lz4-dtb
 
+# GApps
+TARGET_GAPPS_ARCH := arm64
+TARGET_GAPPS_OVERRIDE := GoogleFeedback RecorderPrebuilt CalendarGooglePrebuilt TipsPrebuilt WallpapersBReel2019 Photos PixelLiveWallpaperPrebuilt GoogleTTS SetupWizardPrebuilt
+
+BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
+
 # Audio
 BOARD_USES_ALSA_AUDIO := true
 USE_XML_AUDIO_POLICY_CONF := 1
@@ -62,8 +68,4 @@ BOARD_PERSISTIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_FLASH_BLOCK_SIZE := 131072 # (BOARD_KERNEL_PAGESIZE * 64)
 # BOARD_EXT4_SHARE_DUP_BLOCKS := true
 BOARD_VENDORIMAGE_PARTITION_SIZE := 314572800
-
-TARGET_GAPPS_OVERRIDE := GoogleFeedback RecorderPrebuilt Chrome CalendarGooglePrebuilt TipsPrebuilt WallpapersBReel2019 Photos PixelLiveWallpaperPrebuilt GoogleTTS
-
-BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
 
