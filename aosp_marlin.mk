@@ -34,7 +34,7 @@ TARGET_BOOT_ANIMATION_RES := 1440
 # Gapps
 TARGET_GAPPS_ARCH := arm64
 TARGET_INCLUDE_STOCK_ARCORE := true
-TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := false
 
 # Device specific properties
 PRODUCT_NAME := aosp_marlin
@@ -49,7 +49,7 @@ PRODUCT_GMS_CLIENTID_BASE := android-google
 # Device props
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=marlin \
-    PRIVATE_BUILD_DESC="marlin-user 10 QP1A.191005.007.A3 5972272 release-keys"
+    PRIVATE_BUILD_DESC="marlin-user 8.1.0 OPM1.171019.021 4565141 release-keys"
 
-BUILD_FINGERPRINT :=  google/marlin/marlin:10/QP1A.191005.007.A3/5972272:user/release-keys
+BUILD_FINGERPRINT := google/marlin/marlin:8.1.0/OPM1.171019.021/4565141:user/release-keys
 
