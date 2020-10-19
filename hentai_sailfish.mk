@@ -21,15 +21,15 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
-# Inherit Evolution-X configs
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit hOS configs
+$(call inherit-product, vendor/hentai/config/common_telephony.mk)
 
 # Inherit device specific makefiles
 $(call inherit-product, device/google/marlin/device-sailfish.mk)
 $(call inherit-product, vendor/google_devices/sailfish/sailfish-vendor.mk)
 
 # Device specific properties
-TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_BOOT_ANIMATION_RES := 1440
 
 # Gapps
 TARGET_GAPPS_ARCH := arm64
@@ -37,11 +37,11 @@ TARGET_INCLUDE_STOCK_ARCORE := true
 TARGET_SUPPORTS_GOOGLE_RECORDER := false
 
 # Device specific properties
-PRODUCT_NAME := aosp_sailfish
+PRODUCT_NAME := hentai_sailfish
 PRODUCT_DEVICE := sailfish
-PRODUCT_BRAND := google
+PRODUCT_BRAND := Google
 PRODUCT_MODEL := Pixel
-PRODUCT_MANUFACTURER := Google
+PRODUCT_MANUFACTURER := HTC
 
 # GMS client ID
 PRODUCT_GMS_CLIENTID_BASE := android-google
@@ -52,4 +52,3 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="sailfish-user 8.1.0 OPM1.171019.021 4565141 release-keys"
 
 BUILD_FINGERPRINT := google/sailfish/sailfish:8.1.0/OPM1.171019.021/4565141:user/release-keys
-

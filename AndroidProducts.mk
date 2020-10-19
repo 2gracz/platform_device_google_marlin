@@ -1,9 +1,9 @@
 PRODUCT_MAKEFILES := \
-	$(LOCAL_DIR)/aosp_marlin.mk \
-	$(LOCAL_DIR)/aosp_sailfish.mk
+	$(LOCAL_DIR)/hentai_marlin.mk \
+	$(LOCAL_DIR)/hentai_sailfish.mk
 
 COMMON_LUNCH_CHOICES := \
-	aosp_marlin-userdebug \
-	aosp_sailfish-userdebug \
-        aosp_marlin-eng \
-        aosp_sailfish-eng
+	hentai_marlin-userdebug \
+	hentai_sailfish-userdebug \
+        hentai_marlin-eng \
+        hentai_sailfish-eng
